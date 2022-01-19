@@ -32,7 +32,7 @@
 
 .profile-img:hover {
     border-radius: unset;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .profile-img>img {
