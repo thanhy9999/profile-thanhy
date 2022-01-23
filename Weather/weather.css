@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+body {
+    background: url(./hinh-nen-may-tinh-phong-canh-4K-1920x1280.jpg) no-repeat center/cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.weather-container {
+    width: 350px;
+    height: auto;
+    min-height: 500px;
+    border-radius: 7px;
+    background: url(./hinh-nen-may-tinh-phong-canh-4K-1920x1280.jpg) no-repeat center/cover;
+    padding: 20px;
+}
+
+.weather-search {
+    width: 100%;
+    height: 35px;
+}
+
+.weather-search>input {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.weather-search>input:focus {
+    border-top-left-radius: 15px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.weather-address {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.weather-address>p:first-child {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.weather-address>p:last-child {
+    font-size: 13px;
+    text-align: center;
+}
+
+.weather-temperature {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 35px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.weather-temperature:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgb(90, 88, 88);
+}
+
+.weather-temperature>p {
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.weather-temperature>p:nth-child(1) {
+    font-weight: 600;
+}
+
+.weather-extentions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.weather-extentions-item>p {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background: unset;
+    }
+}
