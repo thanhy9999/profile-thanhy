@@ -6,6 +6,7 @@ var visibility = document.querySelector('.visibility')
 var wind = document.querySelector('.wind')
 var sun = document.querySelector('.sun')
 var time = document.querySelector('.time')
+var btnSearch = document.querySelector('.btnSearch')
 var weatherContainer = document.querySelector('.weather-container')
 
 async function changeData() {
@@ -22,10 +23,15 @@ async function changeData() {
         temperature.innerHTML = Math.round(data.main.temp - 273.15) + ' <sup>o</sup>C'
         shortDesc.innerHTML = data.weather[0].main
         time.innerHTML = new Date().toLocaleString('vi')
+    } else {
+        alert("Không có địa điểm nào như vậy. Vui lòng thử tìm kiếm lại!")
     }
 }
 inputSearch.addEventListener('keypress', function(e) {
     if (e.code === 'Enter') {
         changeData()
     }
+})
+btnSearch.addEventListener('click', function() {
+    changeData()
 })

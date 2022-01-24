@@ -27,10 +27,12 @@ body {
 .weather-search {
     width: 100%;
     height: 35px;
+    display: flex;
+    flex-direction: row;
 }
 
 .weather-search>input {
-    width: 100%;
+    width: 70%;
     height: 100%;
     padding-left: 10px;
     border: none;
@@ -41,8 +43,25 @@ body {
     background: rgba(255, 255, 255, 0.8);
 }
 
+.btnSearch {
+    width: 29%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.btnSearch:hover {
+    background-color: rgb(10, 107, 158);
+    color: white;
+}
+
 .weather-search>input:focus {
-    border-top-left-radius: 15px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
     background: rgba(255, 255, 255, 1);
 }
 
