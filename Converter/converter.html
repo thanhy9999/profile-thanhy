@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="./converter.css">
+    <title>Chuyển Đổi Đơn Vị</title>
+</head>
+
+<body>
+    <div class="converter-container">
+        <div class="converter-lenght">
+            <p>Độ dài</p>
+            <p>Tôi muốn chuyển đổi:</p>
+            <div class="lenght-input">
+                <input type="text" id="lenght-input--value" value="0">
+            </div>
+            <div class="lenght-selectfrom">
+                <select name="" id="lenght-selectfrom--value">
+                    <option value="cm">Centimet (cm)</option>
+                    <option value="m">Mét (m)</option>
+                    <option value="km">Kilomet (km)</option>
+                </select>
+            </div>
+            <p id="lenghtden">Đến:</p>
+            <div class="lenght-selectto">
+                <select name="" id="lenght-selectto--value">
+                    <option value="cm">Centimet (cm)</option>
+                    <option value="m">Mét (m)</option>
+                    <option value="km">Kilomet (km)</option>
+                </select>
+            </div>
+            <div class="lenght-result">
+                <p id="lenght-output">0</p>
+                <button class="btnResetLenght" onclick="resetLenght()"><i class="fas fa-sync-alt"></i></button>
+                <button class="btnConvertLenght" onclick="chuyenDoiDoDai()">Chuyển</button>
+            </div>
+        </div>
+        <!-- Khối lượng -->
+        <div class="converter-lenght">
+            <p>Khối lượng</p>
+            <p>Tôi muốn chuyển đổi:</p>
+            <div class="lenght-input">
+                <input type="text" id="mass-input--value" value="0">
+            </div>
+            <div class="lenght-selectfrom">
+                <select name="" id="mass-selectfrom--value">
+                    <option value="g"> Gam (g)</option>
+                    <option value="kg">Kilogam (kg)</option>
+                    <option value="ton">Tấn (Ton)</option>
+                </select>
+            </div>
+            <p id="lenghtden">Đến:</p>
+            <div class="lenght-selectto">
+                <select name="" id="mass-selectto--value">
+                    <option value="g"> Gam (g)</option>
+                    <option value="kg">Kilogam (kg)</option>
+                    <option value="ton">Tấn (Ton)</option>
+                </select>
+            </div>
+            <div class="lenght-result">
+                <p id="mass-output">0</p>
+                <button class="btnResetMass btnResetLenght"><i class="fas fa-sync-alt"></i></button>
+                <button class="btnConvertMass btnConvertLenght" onclick="chuyenDoiKhoiLuong()">Chuyển</button>
+            </div>
+        </div>
+        <!-- Thể thích -->
+        <div class="converter-lenght">
+            <p>Thể tích</p>
+            <p>Tôi muốn chuyển đổi:</p>
+            <div class="lenght-input">
+                <input type="text" id="speed-input--value" value="0">
+            </div>
+            <div class="lenght-selectfrom">
+                <select name="" id="speed-selectfrom--value">
+                    <option value="ms"> Mét trên giây (m/s)</option>
+                    <option value="kmh">Kilomet trên giờ (km/h)</option>
+                </select>
+            </div>
+            <p id="lenghtden">Đến:</p>
+            <div class="lenght-selectto">
+                <select name="" id="speed-selectto--value">
+                    <option value="ms"> Mét trên giây (m/s)</option>
+                    <option value="kmh">Kilomet trên giờ (km/h)</option>
+                </select>
+            </div>
+            <div class="lenght-result">
+                <p id="speed-output">0</p>
+                <button class="btnResetMass btnResetLenght"><i class="fas fa-sync-alt"></i></button>
+                <button class="btnConvertMass btnConvertLenght" onclick="chuyenDoiTocDo()">Chuyển</button>
+            </div>
+        </div>
+    </div>
+    <script src=" ./converter.js "></script>
+</body>
+
+</html>
